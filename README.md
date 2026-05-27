@@ -1,18 +1,34 @@
-## Getting Started
+# Indodax Tickers Viewer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Aplikasi JavaFX untuk menampilkan data ticker dari database Indodax dengan pagination.
 
-## Folder Structure
+## Requirements
 
-The workspace contains two folders by default, where:
+- Java 21+
+- JavaFX SDK 21 — download di https://gluonhq.com/products/javafx/
+- MySQL Connector/J — download di https://dev.mysql.com/downloads/connector/j/
+- MySQL Server berjalan di localhost:3306
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Setup
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Clone repo ini
+   git clone https://github.com/EaganKyoji/JavaFX-Project.git
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. Copy `.env.example` jadi `.env`
+   cp .env.example .env
 
-## Dependency Management
+3. Isi `.env` dengan kredensial database kamu
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+4. Di VS Code, buka `Java Projects` → `Referenced Libraries` → tambahkan JAR:
+   - Semua JAR dari folder instalasi JavaFX
+   - mysql-connector-j.jar
+
+5. Run `Main.java`
+
+## Struktur Folder
+
+src/Indodax/
+├── Main.java                        ← entry point
+├── IndodaxPaginationController.java ← logika pagination & koneksi DB
+├── IndodaxPagination.fxml           ← layout UI
+└── SqlConnector.java                ← koneksi database
