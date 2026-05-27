@@ -1,0 +1,14 @@
+# Kredensial — WAJIB
+.env
+
+# Hasil kompilasi Java
+bin/
+*.class
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+jbdc/
