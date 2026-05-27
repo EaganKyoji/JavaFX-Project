@@ -12,3 +12,8 @@ bin/
 .DS_Store
 Thumbs.db
 jbdc/
+
+# Dataset
+*.csv
+*.sql
+*.xlsx
