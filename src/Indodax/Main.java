@@ -13,7 +13,7 @@ public class Main extends Application{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("IndodaxPagination.fxml"));
         Scene scene = new Scene(loader.load());
         Stage.setScene(scene);
-        Stage.setTitle("Halo2");
+        Stage.setTitle("Indodax");
         Stage.show();
         
     }
